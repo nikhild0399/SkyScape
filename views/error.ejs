@@ -1,0 +1,36 @@
+<% layout("./layouts/boilerplate.ejs") %>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div
+        class="alert alert-danger d-flex align-items-center shadow-lg p-4 mb-4 rounded-lg border border-danger"
+        role="alert"
+      >
+        <div class="me-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-exclamation-triangle-fill text-danger"
+            width="40"
+            height="40"
+            viewBox="0 0 16 16"
+            role="img"
+            aria-label="Danger:"
+          >
+            <path
+              d="M8.982 1.566a1.5 1.5 0 0 1 2.36 1.36v.014a1.5 1.5 0 0 1-.147.595l-6.856 11.833a1.5 1.5 0 0 1-2.611-1.34L6.51 2.65c.125-.21.289-.402.48-.566zm-1.35 2.34a.5.5 0 0 1 .448.724l-.848 2.12a.5.5 0 0 1-.955-.232l.848-2.12a.5.5 0 0 1 .507-.492zm.866 8a.875.875 0 1 1-1.75 0 .875.875 0 0 1 1.75 0z"
+            />
+          </svg>
+        </div>
+        <div>
+          <h4 class="alert-heading mb-2"><%= message %></h4>
+          <p class="mb-0">
+            An unexpected error occurred. Please try again later. If the problem
+            persists, contact our support team for assistance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

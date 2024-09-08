@@ -1,0 +1,138 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+/* footer styling */
+  /* Footer Social Icons */
+  .social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .social-icon i {
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .social-icon i:hover {
+    color: white;
+    background-color: #fe424d;
+    transform: scale(1.1);
+  }
+
+  /* Footer Brand */
+  .footer-brand {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+  }
+
+  /* Footer Links */
+  .footer-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .footer-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fe424d;
+    transition: width 0.3s;
+  }
+
+  .footer-link:hover::after {
+    width: 100%;
+  }
+
+  .footer-link:hover {
+    color: #fe424d;
+  }
+
+/* Cards Styling */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text {
+  font-weight: 400;
+}
+
+.listing-links {
+  text-decoration: none;
+}
+
+/* Card effects */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.hover-shadow {
+  transition: all 0.4s ease-in-out;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.03);
+  transition: all 0.4s ease-in-out;
+}
+/* Add New Listing Button */
+.add-btn {
+  background-color: rgb(255, 0, 0) !important;
+  border: none !important;
+}
+
+/* Edit Page Button Style */
+.edit-btn {
+  background-color: rgb(255, 0, 0) !important;
+  border: none !important;
+}
+
+/* Show Page */
+.show-img {
+  height: 30vh;
+}
+.btns {
+  display: flex !important;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* MAP STYLE */
+
+#map {
+  height: 360px;
+  width: 85vh;
+
+}

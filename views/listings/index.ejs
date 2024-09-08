@@ -1,0 +1,33 @@
+<% layout("./layouts/boilerplate") %>
+
+<div class="container mt-4">
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+    <% if (allListing.length === 0) { %>
+      <p class="text-center">No listings found</p>
+    <% } else { %>
+      <% for(let list of allListing) { %>
+        <div class="col">
+          <a href="/listings/<%= list.id %>" class="listing-links text-decoration-none">
+            <div class="card h-100 shadow-sm border-0 hover-shadow">
+              <!-- Image with Bootstrap classes for responsiveness and styling -->
+              <img
+                src="<%= list.image.url %>"
+                class="card-img-top rounded"
+                alt="listing_image"
+                style="height: 18rem; object-fit: cover;"
+              />
+              <div class="card-body text-center">
+                <!-- Title -->
+                <h5 class="card-title text-dark fw-bold mb-2" style="font-size: 1.1rem;"><%= list.title %></h5>
+                <!-- Price -->
+                <p class="card-text text-success fw-semibold" style="font-size: 1rem;">
+                  &#8377; <%= list.price.toLocaleString("en-IN") %> / night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      <% } %>
+    <% } %>
+  </div>
+</div>
